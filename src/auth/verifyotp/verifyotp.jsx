@@ -22,7 +22,6 @@ const VerifyOTP = () => {
     return Math.floor(1000 + Math.random() * 9000).toString();
   };
 
-  // Focus on phone input when component loads
   useEffect(() => {
     setTimeout(() => {
       phoneInputRef.current?.focus();
@@ -229,7 +228,6 @@ const VerifyOTP = () => {
     }
   };
 
-  // Resend OTP
   const resendOTP = async () => {
     if (countdown > 0 || resendLoading) return;
 
