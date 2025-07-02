@@ -3,8 +3,8 @@ import axios from "axios";
 import { toast } from "react-toastify";
 
 const API_END_POINT =
-  "https://api.allorigins.win/raw?url=https://apis.askussolution.tech";
-
+  "https://api.allorigins.win/raw?url=https://apis.askussolution.tech/api/auth";
+// "https://apis.askussolution.tech/api/auth";
 export const UserAuth = () => {
   return {
     signUp: async (input) => {

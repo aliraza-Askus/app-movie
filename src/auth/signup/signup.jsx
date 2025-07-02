@@ -29,13 +29,13 @@ const SignUp = () => {
       console.log("Submit Input:", input);
       // call your API function
       await signUp(input);
-      navigate("/signin");
+      navigate("/verifyotp");
     } catch (error) {
       console.error("Signup failed in handler:", error);
       toast.error("Signup failed. Please try again.");
     }
   };
-
+  // generatedOTP phoneNumber
   return (
     <form onSubmit={signupSubmitHandler} className="space-y-4 p-4">
       <div>
